@@ -20,7 +20,7 @@
       "automergeType": "branch",  
       "automergeStrategy": "fast-forward",
       "minimumReleaseAge": null,
-      "ignoreTests": true
+      "requiredStatusChecks": null
     }
   ],
   "platformAutomerge": true,
