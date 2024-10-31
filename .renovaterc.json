@@ -10,7 +10,6 @@
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "ignoreTests": false,
-      "recreateClosed": true,
       "matchDepTypes": ["*"]
     }
   ],
