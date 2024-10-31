@@ -8,7 +8,7 @@
     {
       "matchDepTypes": ["*"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "automergeStrategy": "fast-forward",
       "ignoreTests": true
     }
