@@ -20,7 +20,6 @@
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "ignoreTests": false,
-      "requiredStatusChecks": null,
       "recreateWhen": "always",
       "matchDepTypes": ["*"]
     }
