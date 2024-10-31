@@ -3,7 +3,18 @@
   "extends": ["config:recommended", ":dependencyDashboard"],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "configMigration": true,
   "packageRules": [
+    {
+      "matchCategories": ["config-migration"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "fast-forward",
+      "minimumReleaseAge": null,
+      "ignoreTests": true,
+      "requiredStatusChecks": null,
+      "recreateWhen": "always"
+    },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
