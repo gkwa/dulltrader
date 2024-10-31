@@ -1,45 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "ignorePaths": [
-    "**/testdata/**"
-  ],
-  "extends": [
-    "config:recommended",
-    ":dependencyDashboard"
-  ],
+  "ignorePaths": ["**/testdata/**"],
+  "extends": ["config:recommended", ":dependencyDashboard"],
   "configMigration": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "ignoreTests": false,
-      "matchDepTypes": [
-        "*"
-      ]
+      "matchDepTypes": ["*"]
     },
     {
-      "matchManagers": ["regex"],
+      "matchManagers": ["custom.regex"],
       "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "requiredStatusChecks": null,
-      "stabilityDays": 0
+      "ignoreTests": true,
+      "minimumReleaseAge": null
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": [
-    "gomodTidy",
-    "gomodUpdateImportPaths"
-  ],
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "suppressNotifications": ["configValidationWarnings"]
 }
