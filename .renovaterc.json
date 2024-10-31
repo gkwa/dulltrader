@@ -12,7 +12,6 @@
       "automergeStrategy": "squash",
       "minimumReleaseAge": null,
       "ignoreTests": true,
-      "requiredStatusChecks": null,
       "recreateWhen": "always"
     },
     {
@@ -21,6 +20,7 @@
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "ignoreTests": false,
+      "requiredStatusChecks": null,
       "recreateWhen": "always",
       "matchDepTypes": ["*"]
     }
