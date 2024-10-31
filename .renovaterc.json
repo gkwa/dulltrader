@@ -17,9 +17,9 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "automergeStrategy": "squash",
+      "automergeStrategy": "fast-forward",
       "automergeType": "pr",
-      "ignoreTests": false,
+      "requiredStatusChecks": null,
       "matchDepTypes": ["*"]
     }
   ],
