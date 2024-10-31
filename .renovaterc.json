@@ -9,18 +9,18 @@
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "ignoreTests": true,
-      "minimumReleaseAge": null
+      "automergeType": "pr",
+      "ignoreTests": false,
+      "matchDepTypes": ["*"]
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchCategories": ["config-migration"],
       "automerge": true,
-      "automergeStrategy": "fast-forward",
       "automergeType": "pr",
+      "automergeStrategy": "fast-forward",
       "requiredStatusChecks": null,
-      "matchDepTypes": ["*"]
+      "minimumReleaseAge": null
     }
   ],
   "platformAutomerge": true,
