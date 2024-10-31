@@ -15,13 +15,13 @@
       "matchDepTypes": ["*"]
     },
     {
-      "matchManagers": ["regex"],
+      "matchManagers": ["custom.regex"],
       "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "requiredStatusChecks": null,
-      "stabilityDays": 0
+      "ignoreTests": true,
+      "minimumReleaseAge": null
     }
   ],
   "platformAutomerge": true,
