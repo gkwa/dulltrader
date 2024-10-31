@@ -6,9 +6,9 @@
   "configMigration": true,
   "packageRules": [
     {
-      "matchCategories": ["config-migration"],
+      "matchUpdateTypes": ["replacement"],
       "automerge": true,
-      "automergeType": "pr",
+      "automergeType": "branch",
       "automergeStrategy": "squash",
       "minimumReleaseAge": null,
       "ignoreTests": true,
