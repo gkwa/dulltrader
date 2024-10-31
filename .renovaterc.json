@@ -10,7 +10,7 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeStrategy": "squash",
-      "automergeType": "branch",
+      "automergeType": "pr",
       "ignoreTests": false,
       "matchDepTypes": ["*"]
     },
@@ -18,9 +18,9 @@
       "matchManagers": ["custom.regex"],
       "matchCategories": ["config-migration"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "ignoreTests": true,
+      "requiredStatusChecks": null,
       "minimumReleaseAge": null
     }
   ],
