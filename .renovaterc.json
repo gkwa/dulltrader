@@ -17,10 +17,10 @@
     {
       "matchCategories": ["config-migration"],
       "automerge": true,
-      "automergeType": "branch",  
+      "automergeType": "branch",
       "automergeStrategy": "fast-forward",
       "minimumReleaseAge": null,
-      "requiredStatusChecks": null
+      "ignoreTests": true
     }
   ],
   "platformAutomerge": true,
