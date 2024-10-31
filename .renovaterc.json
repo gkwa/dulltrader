@@ -7,20 +7,21 @@
   "prConcurrentLimit": 0,
   "packageRules": [
     {
+      "matchCategories": ["config-migration"],
+      "automerge": true,
+      "automergeType": "branch",
+      "automergeStrategy": "fast-forward",
+      "minimumReleaseAge": null,
+      "ignoreTests": true,
+      "requiredStatusChecks": null
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeStrategy": "fast-forward",
       "automergeType": "pr",
       "ignoreTests": false,
       "matchDepTypes": ["*"]
-    },
-    {
-      "matchCategories": ["config-migration"],
-      "automerge": true,
-      "automergeType": "branch",
-      "automergeStrategy": "fast-forward",
-      "minimumReleaseAge": null,
-      "ignoreTests": true
     }
   ],
   "platformAutomerge": true,
