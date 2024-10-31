@@ -5,7 +5,6 @@
   "configMigration": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -22,11 +21,10 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "requiredStatusChecks": null,
+      "ignoreTests": true,
       "minimumReleaseAge": null
     }
   ],
-
   "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
