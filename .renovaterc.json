@@ -17,7 +17,7 @@
     {
       "matchCategories": ["config-migration"],
       "automerge": true,
-      "automergeType": "pr",
+      "automergeType": "branch",  
       "automergeStrategy": "fast-forward",
       "minimumReleaseAge": null,
       "ignoreTests": true
