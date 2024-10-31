@@ -16,12 +16,11 @@
       "matchCategories": ["!config-migration"]
     },
     {
-      "matchManagers": ["custom.regex"],
       "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "ignoreTests": true,
+      "requiredStatusChecks": null,
       "minimumReleaseAge": null
     }
   ],
