@@ -25,6 +25,5 @@
     }
   ],
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
-  "suppressNotifications": ["configValidationWarnings"]
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
