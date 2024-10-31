@@ -12,7 +12,6 @@
       "automergeStrategy": "fast-forward",
       "minimumReleaseAge": null,
       "ignoreTests": true,
-      "requiredStatusChecks": null,
       "recreateWhen": "always"
     },
     {
