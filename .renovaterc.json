@@ -3,15 +3,18 @@
   "configMigration": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "extends": ["config:recommended"],
+  "extends": ["config:recommended", ":dependencyDashboard"],
   "packageRules": [
     {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+
       "matchDepTypes": ["*"],
       "automerge": true,
       "automergeType": "pr",
-      "automergeStrategy": "fast-forward",
-      "ignoreTests": true
+      "automergeStrategy": "squash",
+      "ignoreTests": false
     }
   ],
-  "platformAutomerge": true
+  "platformAutomerge": true,
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
