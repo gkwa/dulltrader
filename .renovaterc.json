@@ -7,6 +7,7 @@
     "config:recommended",
     ":dependencyDashboard"
   ],
+  "configMigration": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "packageRules": [
@@ -26,9 +27,8 @@
       ]
     },
     {
-      "matchDepTypes": [
-        "configMigration"
-      ],
+      "matchManagers": ["regex"],
+      "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
@@ -40,5 +40,6 @@
   "postUpdateOptions": [
     "gomodTidy",
     "gomodUpdateImportPaths"
-  ]
+  ],
+  "suppressNotifications": ["configValidationWarnings"]
 }
