@@ -16,7 +16,6 @@
       "matchCategories": ["!config-migration"]
     },
     {
-      "matchManagers": ["regex", "renovation"],
       "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "pr",
