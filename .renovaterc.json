@@ -8,7 +8,7 @@
     {
       "matchCategories": ["config-migration"],
       "automerge": true,
-      "automergeType": "branch",
+      "automergeType": "pr",
       "automergeStrategy": "squash",
       "minimumReleaseAge": null,
       "ignoreTests": true,
