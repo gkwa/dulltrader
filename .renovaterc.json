@@ -11,7 +11,7 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "requiredStatusChecks": null,
+      "ignoreTests": true,
       "minimumReleaseAge": null
     },
     {
