@@ -12,7 +12,8 @@
       "automergeType": "branch",
       "automergeStrategy": "fast-forward",
       "minimumReleaseAge": null,
-      "ignoreTests": true
+      "ignoreTests": true,
+      "requiredStatusChecks": null
     },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
