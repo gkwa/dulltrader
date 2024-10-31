@@ -5,6 +5,7 @@
   "configMigration": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -12,7 +13,8 @@
       "automergeStrategy": "squash",
       "automergeType": "pr",
       "ignoreTests": false,
-      "matchDepTypes": ["*"]
+      "matchDepTypes": ["*"],
+      "matchCategories": ["!config-migration"]
     },
     {
       "matchManagers": ["custom.regex"],
@@ -20,10 +22,11 @@
       "automerge": true,
       "automergeType": "pr",
       "automergeStrategy": "fast-forward",
-      "ignoreTests": true,
+      "requiredStatusChecks": null,
       "minimumReleaseAge": null
     }
   ],
+
   "platformAutomerge": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
