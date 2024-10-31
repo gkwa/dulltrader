@@ -9,7 +9,7 @@
       "matchCategories": ["config-migration"],
       "automerge": true,
       "automergeType": "branch",
-      "automergeStrategy": "fast-forward",
+      "automergeStrategy": "squash",
       "minimumReleaseAge": null,
       "ignoreTests": true,
       "requiredStatusChecks": null,
