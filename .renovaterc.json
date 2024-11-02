@@ -5,15 +5,6 @@
   "prConcurrentLimit": 0,
   "packageRules": [
     {
-      "matchUpdateTypes": ["replacement"],
-      "automerge": true,
-      "automergeType": "branch",
-      "automergeStrategy": "squash",
-      "minimumReleaseAge": null,
-      "ignoreTests": true,
-      "recreateWhen": "always"
-    },
-    {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
       "automergeStrategy": "squash",
