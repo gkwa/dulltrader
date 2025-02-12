@@ -2,7 +2,7 @@ module github.com/taylormonacelli/dulltrader
 
 go 1.21
 
-toolchain go1.23.6
+toolchain go1.24.0
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.29.6
